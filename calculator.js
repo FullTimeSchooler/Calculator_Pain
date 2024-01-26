@@ -6,6 +6,8 @@ function clr() {
     document.getElementById("answer").value = ""
 }
 
+let calculate = document.getElementById("cal");
+
 function math(equation) {
     if ($("one").val() === "1" || $("two").val === "2"
         || $("three").val() === "3" || $(four).val() === "4"
