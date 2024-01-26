@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,37 +8,41 @@
     <link rel="stylesheet" href="calculator.css">
     <script src="calculator.js"></script>
 </head>
+
 <body>
     <h1>Calculator</h1>
     <table>
         <tr>
-            <td colspan="3"></td>
-            <td><button>c</button></td>
+            <td colspan="3"><input type="text" id="answer"></td>
+            <td><button onclick="clr()" onkeydown="math(equation)">c</button></td>
         </tr>
         <tr>
-            <td><button>1</button></td>
-            <td><button>2</button></td>
-            <td><button>3</button></td>
-            <td><button>/</button></td>
+            <td><button onclick="display('1')" onkeydown="math(equation)" id="one">1</button></td>
+            <td><button onclick="display('2')" onkeydown="math(equation)" id="two">2</button></td>
+            <td><button onclick="display('3')" onkeydown="math(equation)" id="three">3</button></td>
+            <td><button onclick="display('/')" onkeydown="math(equation)" id="/">/</button></td>
         </tr>
         <tr>
-            <td><button>4</button></td>
-            <td><button>5</button></td>
-            <td><button>6</button></td>
-            <td><button>*</button></td>
+            <td><button onclick="display('4')" onkeydown="math(equation)" id="four">4</button></td>
+            <td><button onclick="display('5')" onkeydown="math(equation)" id="five">5</button></td>
+            <td><button onclick="display('6')" onkeydown="math(equation)" id="six">6</button></td>
+            <td><button onclick="display('*')" onkeydown="math(equation)" id="*">*</button></td>
         </tr>
         <tr>
-            <td><button>7</button></td>
-            <td><button>8</button></td>
-            <td><button>9</button></td>
-            <td><button>-</button></td>
+            <td><button onclick="display('7')" onkeydown="math(equation)" id="seven">7</button></td>
+            <td><button onclick="display('8')" onkeydown="math(equation)" id="eight">8</button></td>
+            <td><button onclick="display('9')" onkeydown="math(equation)" id="nine">9</button></td>
+            <td><button onclick="display('-')" onkeydown="math(equation)" id="minus">-</button></td>
         </tr>
         <tr>
-            <td><button>0</button></td>
-            <td><button>.</button></td>
-            <td><button>=</button></td>
-            <td><button>+</button></td>
+            <td><button onclick="display('0')" onkeydown="math(equation)" id="zero">0</button></td>
+            <td><button onclick="display('.')" onkeydown="math(equation)" id="decimal">.</button></td>
+            <td><button onclick="display('=')" onkeydown="math(equation)" id="equak">=</button></td>
+            <td><button onclick="display('+')" onkeydown="math(equation)" id="plus">+</button></td>
         </tr>
     </table>
+    <script src="calculator.js">
+    </script>
 </body>
+
 </html>
